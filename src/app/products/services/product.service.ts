@@ -10,7 +10,7 @@ import { Product } from '../models/product';
 export class ProductService {
   constructor(private http: HttpClient) {}
 
-  baseUrl: string = 'http://localhost:3000/products/';
+  baseUrl = 'http://localhost:3000/products/';
 
   createProduct(model: Product) {
     return this.http.post(this.baseUrl, model);

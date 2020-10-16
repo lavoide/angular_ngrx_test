@@ -12,18 +12,20 @@ import { StoreModule } from '@ngrx/store';
 import * as fromProductState from './store';
 import { EffectsModule } from '@ngrx/effects';
 import { ProductEffects } from './store/product.effects';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 @NgModule({
   declarations: [
     ProductComponent,
     ProductAddComponent,
     ProductEditComponent,
-    ProductListComponent
+    ProductListComponent,
   ],
   imports: [
     CommonModule,
     ProductsRoutingModule,
     FormsModule,
+    NgxPaginationModule,
     StoreModule.forFeature(
       fromProductState.productStateFeatureKey,
       fromProductState.reducers,

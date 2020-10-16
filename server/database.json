@@ -17,30 +17,6 @@
       "quantity": 89653
     },
     {
-      "id": 3,
-      "name": "Awesome Soft Hat",
-      "description": "Hic ea sint alias eum quis aut aut. Rerum animi sed.",
-      "price": "401.00",
-      "imageUrl": "https://source.unsplash.com/1600x900/?product",
-      "quantity": 51737
-    },
-    {
-      "id": 4,
-      "name": "Licensed Wooden Sausages",
-      "description": "Aut ullam voluptatem dignissimos rerum earum illum error. Quia fuga totam vero quisquam et delectus suscipit quaerat.",
-      "price": "708.00",
-      "imageUrl": "https://source.unsplash.com/1600x900/?product",
-      "quantity": 37450
-    },
-    {
-      "id": 5,
-      "name": "Intelligent Frozen Car",
-      "description": "Rerum adipisci neque voluptatem sed voluptatem a eum. Id laudantium quaerat voluptatem.",
-      "price": "773.00",
-      "imageUrl": "https://source.unsplash.com/1600x900/?product",
-      "quantity": 25563
-    },
-    {
       "id": 6,
       "name": "Incredible Rubber Gloves",
       "description": "Facilis quae aut sed nemo iusto excepturi nulla. Rerum optio velit fugit.",
@@ -55,14 +31,6 @@
       "price": "718.00",
       "imageUrl": "https://source.unsplash.com/1600x900/?product",
       "quantity": 66668
-    },
-    {
-      "id": 8,
-      "name": "Intelligent Soft Pants",
-      "description": "Non porro quisquam ut nam ut sit omnis asperiores nostrum. Corporis excepturi sit eum autem animi dignissimos.",
-      "price": "391.00",
-      "imageUrl": "https://source.unsplash.com/1600x900/?product",
-      "quantity": 4050
     },
     {
       "id": 9,
@@ -81,12 +49,60 @@
       "quantity": 76400
     },
     {
-      "name": "asd",
-      "description": "asd",
-      "price": "asd",
+      "name": "Эхо",
+      "description": "asdasd",
+      "price": "23",
       "quantity": 1,
       "imageUrl": "https://www.goiceland.com/images/skogarfoss.jpg",
       "id": 11
+    },
+    {
+      "name": "asdasd",
+      "description": "asdasd",
+      "price": "23",
+      "quantity": -1,
+      "imageUrl": "https://www.goiceland.com/images/skogarfoss.jpg",
+      "id": 12
+    },
+    {
+      "name": "Лабиринты Эхо",
+      "description": "sadasd",
+      "price": "23",
+      "quantity": 2,
+      "imageUrl": "https://www.goiceland.com/images/skogarfoss.jpg",
+      "id": 13
+    },
+    {
+      "name": "Лабиринты Эхо",
+      "description": "23213",
+      "price": "213",
+      "quantity": -2,
+      "imageUrl": "https://www.goiceland.com/images/skogarfoss.jpg",
+      "id": 14
+    },
+    {
+      "name": "Лабиринты Эхо",
+      "description": "aas",
+      "price": "23",
+      "quantity": 1,
+      "imageUrl": "https://www.goiceland.com/images/skogarfoss.jpg",
+      "id": 15
+    },
+    {
+      "name": "Лабиринты Эхо",
+      "description": "231",
+      "price": "23",
+      "quantity": 1,
+      "imageUrl": "https://www.goiceland.com/images/skogarfoss.jpg",
+      "id": 16
+    },
+    {
+      "name": "12345",
+      "description": "121341",
+      "price": "23",
+      "quantity": 1,
+      "imageUrl": "https://www.goiceland.com/images/skogarfoss.jpg",
+      "id": 17
     }
   ]
 }
