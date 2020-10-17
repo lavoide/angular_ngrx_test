@@ -4,7 +4,13 @@
             <a class="nav-item nav-link"
                [routerLink]="['/product/list']"
                routerLinkActive="active">Products</a>
-
+               <select class='select-option'
+               #mySelect
+               (change)='onOptionsSelected(mySelect.value)'>
+              <option class='option' 
+              *ngFor='let option of roles' 
+              [value]="option">{{option}}</option>
+           </select>
         </div>
     </div>
 </nav>
