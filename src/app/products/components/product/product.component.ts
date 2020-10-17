@@ -20,7 +20,7 @@ export class ProductComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    if (localStorage.getItem('role') === 'user'){
+    if (localStorage.getItem('role') === 'user') {
       this.visibility = 'none';
     }
     this.product$ = this.service.getProduct(

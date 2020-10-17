@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
     localStorage.setItem('role', 'user');
   }
-  onOptionsSelected(value){
+  onOptionsSelected(value) {
     localStorage.setItem('role', value.toLowerCase());
     this.router.navigate(['/']);
   }
