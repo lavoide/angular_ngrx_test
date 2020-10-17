@@ -28,7 +28,11 @@ export class ProductListComponent implements OnInit {
     this.store.dispatch(fromActions.loadProducts());
     this.loadProducts();
   }
-
+  onAddClick() {
+    if (localStorage.getItem('role') === 'admin') {
+      this.router.navigate(['/product/add']);
+    } else {alert('You have no rights!'); }
+  }
   loadProducts() {
     this.products$ = this.store.pipe(select(selectProducts));
     this.products$.subscribe(

@@ -33,7 +33,7 @@
                                 [routerLink]="['/product/edit', product.id]">Edit <i class="fas fa-edit"></i></button>
                         <button type="button"
                                 (click)="deleteProduct(product.id)"
-                                class="btn btn-danger">Remove <i class="fas fa-trash"></i></button>
+                                class="btn btn-danger {{visibility}}">Remove <i class="fas fa-trash"></i></button>
                     </div>
                 </div>
             </div>
