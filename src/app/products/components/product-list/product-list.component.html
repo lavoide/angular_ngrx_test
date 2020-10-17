@@ -3,18 +3,22 @@
         
         <h4>Products</h4>
         
-            <button type="button"
-                    class="btn btn-success"
-                    [routerLink]="['/product/add']">Add New Product <i class="fas fa-plus"></i></button>
+        <div class="text-right">
+          <button type="button"
+                  class="btn btn-success"
+                  [routerLink]="['/product/add']">Add New Product <i class="fas fa-plus"></i></button>
+        </div>
        
 
-       
-
-            <!-- <div class="col-lg-4 col-md-6 mt-3"
-                 *ngFor="let product of products$ | async"> -->
-                 <div class="col-lg-4 col-md-6 mt-3"
-                 >
-                <!-- <div class="card">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mt-3"
+                 *ngFor="let product of products | paginate: { id: 'foo',
+                 itemsPerPage: 10,
+                 currentPage: page,
+                 totalItems: totalRecords }"> 
+                 <!-- <div class="col-lg-4 col-md-6 mt-3"
+                 > -->
+                <div class="card">
                     <img src="{{product.imageUrl}}"
                          class="card-img-top"
                          alt="Product Image">
@@ -33,10 +37,10 @@
                         </div>
                         
                     </div>
-                </div> -->
+                </div>
               
 
-                <table class="table">
+                <!-- <table class="table">
                     <thead>
                         <tr>
                             <th>Image</th>
@@ -63,7 +67,7 @@
                         </tr>
 
                     </tbody>
-                </table>
+                </table> -->
                
                 <!-- <nav aria-label="Page navigation example">
                     <ul class="pagination">
@@ -85,18 +89,19 @@
                   </nav> -->
                
             </div>
-            <pagination-controls  id="foo"
-            (pageChange)="page = $event"
-            maxSize="9"
-            directionLinks="true"
-            autoHide="true"
-            responsive="true"
-            previousLabel="Previous"
-            nextLabel="Next"
-            screenReaderPaginationLabel="Pagination"
-            screenReaderPageLabel="page"
-            screenReaderCurrentLabel="You're on page">
-</pagination-controls>
+           
         </div>
-
+        <pagination-controls class="pag"  id="foo"
+        (pageChange)="page = $event"
+        maxSize="9"
+        directionLinks="true"
+        autoHide="true"
+        responsive="true"
+        previousLabel="Previous"
+        nextLabel="Next"
+        screenReaderPaginationLabel="Pagination"
+        screenReaderPageLabel="page"
+        screenReaderCurrentLabel="You're on page">
+        </pagination-controls>    
 </div>
+ 

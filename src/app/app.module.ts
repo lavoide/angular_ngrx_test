@@ -7,7 +7,6 @@ import { ProductComponent } from "./products/components/product/product.componen
 import { ProductAddComponent } from "./products/components/product-add/product-add.component";
 import { ProductEditComponent } from "./products/components/product-edit/product-edit.component";
 import { ProductListComponent } from "./products/components/product-list/product-list.component";
-import { HomeComponent } from "./pages/home/home.component";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { SharedModule } from "./shared/shared.module";
@@ -20,7 +19,7 @@ import { EffectsModule } from '@ngrx/effects';
 import { AppEffects } from './app.effects';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
