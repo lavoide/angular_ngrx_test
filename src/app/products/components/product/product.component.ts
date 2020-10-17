@@ -12,7 +12,7 @@ import { Product } from '../../models/product';
 })
 export class ProductComponent implements OnInit {
   product$: Observable<Product>;
-  visibility: string =  'visible';
+  visibility = 'visible';
   constructor(
     private route: ActivatedRoute,
     private router: Router,

@@ -4,3 +4,93 @@
 .visible{
     display: block;
 }
+
+.flex_container{
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: center
+}
+.product_details{
+    margin-top: 1.5rem;
+    -webkit-box-flex: 0;
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.flex_inside{
+    margin-top: 1.5rem;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.flex_image, .flex_text{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (min-width: 768px){
+.flex_image, .flex_text {
+    -webkit-box-flex: 0;
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
+}}
+.flex_image, .flex_text{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.flex_img{
+    flex-shrink: 0;
+    width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+.prod_card{
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+.prod_card h5{
+    margin-bottom: 0.75rem;
+}
+.prod_card p{
+    margin-bottom: 0;
+}
+.buttons_center{
+    text-align: center;
+}
+.edit_buttons{
+    position: relative;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.remove_button{
+    background-color: #b23b30;
+    outline: none;
+}
+.remove_button:hover{
+    background-color: #9b362d;
+}
+.edit_button{
+    outline: none;
+}
+.edit_button:hover{
+    background-color: #8b4caa
+}
+.back_button{
+    outline: none;
+    background-color: #2780E3;
+}

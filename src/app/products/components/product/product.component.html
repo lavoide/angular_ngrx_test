@@ -1,9 +1,9 @@
-<div class="row justify-content-center">
-    <div class="col-8 mt-4"
+<div class="flex_container">
+    <div class="product_details"
          *ngIf="product$ | async as product">
         <h4>Product Detail</h4>
-        <div class="row mt-4">
-            <div class="col-md-5 col-lg-7">
+        <div class="flex_inside">
+            <div class="flex_image">
                 <img class="card-img-top"
                      src={{product.imageUrl}}
                      alt="Card image cap">
@@ -18,28 +18,26 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-7 col-lg-5">
-                <div class="card-body">
-                    <h5 class="card-title">{{product.name}}</h5>
-                    <p class="card-text">{{product.description}}
+            <div class="flex_text">
+                <div class="prod_card">
+                    <h5>{{product.name}}</h5>
+                    <p >{{product.description}}
                     </p>
                 </div>
-                <div class="text-center">
-                    <div class="btn-group"
-                         role="group"
-                         aria-label="Basic example">
+                <div class="buttons_center">
+                    <div class="edit_buttons">
                         <button type="button"
-                                class="btn btn-warning {{visibility}}"
+                                class="button edit_button {{visibility}}"
                                 [routerLink]="['/product/edit', product.id]">Edit <i class="fas fa-edit"></i></button>
                         <button type="button"
                                 (click)="deleteProduct(product.id)"
-                                class="btn btn-danger {{visibility}}">Remove <i class="fas fa-trash"></i></button>
+                                class="button remove_button {{visibility}}">Remove <i class="fas fa-trash"></i></button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="mt-4">
-            <button class="btn btn-primary"
+            <button class="button back_button"
                     [routerLink]="['/product/list']"
                     routerLinkActive="router-link-active"><i class="fas fa-arrow-left"></i> Back To List</button>
         </div>

@@ -1,0 +1,31 @@
+.flex_form{
+    justify-content: center;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.flex_content{
+    margin-top: 1.5rem;
+    -webkit-box-flex: 0;
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+}
+.form_group{
+    margin-bottom: 1rem;
+}
+.form_row{
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+@media (min-width: 768px){
+.quantity {
+    -webkit-box-flex: 0;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+}
